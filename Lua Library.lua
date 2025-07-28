@@ -107,8 +107,9 @@ function leftClick()
         if (libClick.leftClick == -1) then
             libClick.leftClick = time
         end
-        libClick.leftClick = -1
         return (time == libClick.leftClick)
+    else
+        libClick.leftClick = -1
     end
     return false
 end
@@ -118,8 +119,9 @@ function rightClick()
         if (libClick.rightClick == -1) then
             libClick.rightClick = time
         end
-        libClick.rightClick = -1
         return (time == libClick.rightClick)
+    else
+        libClick.rightClick = -1
     end
     return false
 end
@@ -130,8 +132,9 @@ function middleClick()
             libClick.middleClick = time
         end
         return (time == libClick.middleClick)
+    else
+        libClick.middleClick = -1
     end
-    libClick.middleClick = -1
     return false
 end
 
