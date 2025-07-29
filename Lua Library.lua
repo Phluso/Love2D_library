@@ -18,10 +18,7 @@ function lerp(n1, n2, l)
 end
 
 function round(n)
-    if (fract(n) < .5) then     --arredondar pra baixo
-        return math.floor(n);
-    end                         --arredondar pra cima
-    return math.ceil(n);
+    return math.floor(n + .5)
 end
 
 function clamp(n, min, max)
